@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #161a1d;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  touch-action: manipulation; /* Prevents default touch interactions like zooming */
+  -webkit-tap-highlight-color: transparent; /* Prevents the tap highlight effect */
+}
+.bg-secondary {
+  background-color: #1d2125;
+}
+.button-color {
+  background-color: #0098ea;
+}
