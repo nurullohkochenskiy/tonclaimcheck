@@ -21,3 +21,8 @@
   font-weight: bold; /* Make text bold */
   pointer-events: none;
 }
+.clickerlogo{
+  background-image: url('/public/tonloadpic.png');
+  background-size: cover;
+  border-radius: 50%;
+}

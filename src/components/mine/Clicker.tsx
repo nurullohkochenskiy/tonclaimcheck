@@ -65,6 +65,7 @@ const Clicker = () => {
         onClick={addOne}
       >
         <div
+        className="clickerlogo"
           ref={coinRef}
           style={{
             maxWidth: "40vw",
