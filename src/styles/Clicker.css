@@ -22,7 +22,8 @@
   pointer-events: none;
 }
 .clickerlogo{
-  background-image: url('/public/tonloadpic.png');
+  background-image: url('https://telegra.ph/file/6659447f40c7ef444cea8.png');
   background-size: cover;
   border-radius: 50%;
+  
 }

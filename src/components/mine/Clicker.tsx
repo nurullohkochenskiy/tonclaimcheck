@@ -54,37 +54,29 @@ const Clicker = () => {
   return (
     <>
       <div
-        className="text-center relative clicker flex justify-center items-center"
-        style={{ position: "absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)" }}
+        className="text-center relative clicker flex justify-center items-center clickerlogo"
+        style={{
+          maxWidth: "40vw",
+          width: "40vw",
+          height: '40vw',
+          borderRadius: "50%",
+          boxShadow: "0 0 50px #0490e0",
+          transition: "transform 0.2s",
+        }}
         onMouseDown={startPop}
         onMouseUp={endPop}
         onTouchStart={startPop}
         onTouchEnd={endPop}
         onPointerDown={startPop} // Added pointer events
-        onPointerUp={endPop}     // Added pointer events
+        onPointerUp={endPop} // Added pointer events
         onClick={addOne}
+        ref={coinRef}
       >
+        
         <div
-        className="clickerlogo"
-          ref={coinRef}
-          style={{
-            maxWidth: "40vw",
-            height: "auto",
-            borderRadius: "50%",
-            boxShadow: "0 0 50px #0490e0",
-            position: "relative",
-            transition: "transform 0.2s",
-          }}
-        >
-          <Image
-            alt="logo"
-            src={logo}
-            style={{
-              borderRadius: "50%",
-            }}
-          />
-        </div>
-        <div ref={moneyAnimationRef} className="absolute top-0 left-0 w-full h-full pointer-events-none"></div>
+          ref={moneyAnimationRef}
+          className="absolute top-0 left-0 w-full h-full pointer-events-none"
+        ></div>
       </div>
     </>
   );
